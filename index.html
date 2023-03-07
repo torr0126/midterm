@@ -16,8 +16,8 @@
     <div class="container"> 
         <!--Start with header-->
         <header>
-            <img src="images/lone-starfish-wide.jpg" alt="Alone Starfish"></img>
-            <h1>Lone Starfish</h1>
+            <h1 id="header-title">Lone Starfish</h1>
+            <img src="images/lone-starfish-wide.jpg" alt="Alone Starfish" id="header-image">
             <nav>
             <ul class="mainmenu">
                 <li><a href="#">HOME</a></li>
@@ -29,12 +29,12 @@
     <!-- starting main content of the page -->
         <main>
             <article>
-                <h2>Life of a Starfish</h2>
-                <img src="images/lone-starfish.jpg" alt="starfish"> </img>
+                <h2 id="article-title">Life of a Starfish</h2>
+                <img src="images/lone-starfish.jpg" alt="starfish"id="article-image"> </img>
                 <p>
                 Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue; amur pike barbeled houndshark dwarf loach beachsalmon archerfish longfin fingerfish, thornfish: plownose chimaera gurnard. Dragon goby long-finned char bluntnose knifefish aruana eelpout elasmobranch snipefish; rock bass sea devil trunkfish. Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra. Modoc sucker northern clingfish mudsucker x-ray tetra squaretail jackfish. Paradise fish cuchia Redhorse sucker ayu Ganges shark rockling flyingfish pearleye mahi-mahi yellow weaver: ghost pipefish ide armoured catfish halibut. Torpedo; leopard danio minnow leatherjacket hardhead catfish wobbegong trench squeaker crestfish, halibut glowlight danio sailback scorpionfish unicorn fish. Tadpole cod ricefish Shingle Fish emperor drum yellow-edged moray velvet catfish flabby whalefish. Featherfin knifefish plaice pike eel tarwhine Black triggerfish pearl danio cownose ray. Merluccid hake, platy peamouth humuhumunukunukuapua'a barred danio. Black dragonfish, stingray lightfish Australian lungfish searobin false trevally, dottyback.
                 </p>
-                <h3>Facts About Starfish</h3>
+                <h3 class="section-title">Facts About Starfish</h3>
                 <ul>
                     <li>Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
                     <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
@@ -43,21 +43,17 @@
                 </ul>
             </article>
             <section>
-                <h3>Contact to learn more</h3>
-                <form action="/thanks.html" method="get">
-                    <div>
+                <h3 class="section-title">Contact to learn more</h3>
+                <form action="#" method="get">
+                    <div id="form-format">
                         <label for="fullname">Your Name</label>
                         <input id="fullname" type="text" name="fullname">
-                    </div>
-                    <div>
                         <label for="email">Your email</label>
                         <input id="email" type="email" name="email">
-                    </div>
-                    <div>
                         <label for="message">Your message</label>
                         <textarea id="message"></textarea>
-                    </div>
-                    <div>
+                    </div> 
+                    <div class="radio-format">            
                         <h4>Would you like to visit the starfish</h4>
                         <label for="Yes"> Yes</label>
                         <input type="radio" id="Yes" name="past" checked>
@@ -66,7 +62,7 @@
                         <label for="Maybe"> Maybe</label>
                         <input type="radio" id="Maybe" name="past" checked>
                     </div>
-                        <button type="submit">Send</button>
+                    <input type="button" class="button-format" value="Submit">
                 </form>
             </section>
         </main>
